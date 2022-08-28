@@ -1,9 +1,11 @@
+import cartLogo from "../imgs/carro.png";
 const CartWidget = () => {
 
 
     return(
-        <img width="50px" height="50px" src ="" alt="imagen de carro de compras" />
-
+        <div className="cartWidget">
+            <img width="50px" height="50px" src ={cartLogo} alt="imagen de carro de compras" />
+        </div>
     );
 }
 
