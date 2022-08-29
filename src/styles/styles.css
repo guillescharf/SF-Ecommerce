@@ -30,10 +30,11 @@
 .item{
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
-    height:200px;
-    border: 1px solid blue;
-    border-radius: 5px;
+    width: 220px;
+    height:220px;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 20px;
     align-content: space-around;
     justify-content: space-around;
     margin: 10px;
@@ -43,7 +44,9 @@
 .productImage{
     width: 180px;
     height: 150px;
-    border: 1px solid blue;
+
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .cartButton{
     width: 50px;

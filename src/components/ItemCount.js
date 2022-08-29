@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ItemCount = ({Stock, Initial, Name}) => {
+const ItemCount = ({Stock, Initial, Data}) => {
 
     const[count,setCount] = useState(parseInt(Initial));
 
@@ -24,10 +24,10 @@ const ItemCount = ({Stock, Initial, Name}) => {
      
     return (
         <div className="item">
-            <h3>{Name}</h3>
-            <img className="productImage" src="" alt="Imagen del producto " />
+            <h3>{Data.title.substr(0,15)}...</h3>            
+            <img className="productImage" src={Data.image} alt={Data.title} title={Data.title} />
             <button className="cartButton" onClick={cartDown} > - </button>
-            <span> {count} </span>
+            <span> {count} de {Stock} en Stock </span>
             <button className="cartButton" onClick={cartUp} > + </button>
         </div>
     )
