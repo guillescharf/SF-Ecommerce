@@ -1,5 +1,6 @@
 import { useEffect, useState} from "react";
 import ItemCount from "./ItemCount";
+// import loading from "../imgs/loading.png";
 
 const ItemListContainer = ({nameEcommerce}) => {
 
@@ -23,6 +24,8 @@ const ItemListContainer = ({nameEcommerce}) => {
     return(
         <div className="itemsContainer">
             <h1 className="ecommerceName">{nameEcommerce}</h1>
+            {/* <img src={loading} /> */}
+
             {products.map((product) => {
                 console.log("product", product);
                 return (
